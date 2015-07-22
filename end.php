@@ -49,6 +49,7 @@ function DoTheScroll(){
 </SCRIPT>
  
 <body background="back.jpg">
+	<?php session_start(); ?>
 
 	<img src="./top.jpg" width=975 >
 	<a href="login.php" align="right"><font color="#000000"><b>Login</b></font></a>

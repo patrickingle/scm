@@ -48,11 +48,12 @@ function DoTheScroll(){
 
 </SCRIPT>
 <body background="back.jpg">
+	<?php session_start(); ?>
 
 	<img src="./top.jpg" width=975 >
 <table width=1000>
 	<tr>
-	<td width='90%'><b>Welcome, lalit </b></td>
+	<td width='90%'><b>Welcome, <?php echo $_SESSION['username']; ?></b></td>
 	<td width="10%"><a href="end.php" align="right"><font color="#000000"><b>Logout</b></font></a></td>
 	</tr>
 </table>
@@ -94,6 +95,8 @@ function DoTheScroll(){
 					<input type="reset" name="reset" value="Reset">
 				</form>
 <?php
+			if(isset($_POST['lalitvar']))
+			{
 $orderid = $_POST['orderid'];
 $custid = $_POST['custid'];
 $itemid = $_POST['itemid'];
@@ -106,8 +109,6 @@ $orderdate = $_POST['odate'];
 $deliverydate = $_POST['ddate'];
 $returndate = $_POST['rdate'];
 
-			if(isset($_POST['lalitvar']))
-			{
 			$link = mysql_connect("localhost", "root", "gate1024");
 			$result = mysql_db_query('scm',"INSERT INTO sales VALUES('$orderid','$custid','$itemid','$category','$itemname','$qoi','$quantity','$ppu','$orderdate','$deliverydate','$returndate')",$link);
 			}		

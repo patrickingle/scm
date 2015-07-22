@@ -48,6 +48,7 @@ function DoTheScroll(){
 
 </SCRIPT>
 <body background="back.jpg">
+	<?php session_start(); ?>
 
 	<img src="./top.jpg" width=975 >
 <table width=1000>
