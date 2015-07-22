@@ -3,7 +3,7 @@ $title = 'Login';
 include 'header.php'; 
 ?>
 
-<body background="back.jpg">
+<body background="images/back.jpg">
 
 	<img src="images/top.jpg" width=975 >
 	<br><br><br><br><br><br> 

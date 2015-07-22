@@ -3,7 +3,7 @@ $title = 'Order Entry';
 include 'header.php'; 
 ?>
 
-<body background="back.jpg">
+<body background="images/back.jpg">
 	<?php session_start(); ?>
 
 	<img src="images/top.jpg" width=975 >

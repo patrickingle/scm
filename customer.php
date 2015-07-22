@@ -3,7 +3,7 @@ $title = 'Customer';
 include 'header.php'; 
 ?>
 
-<body background="back.jpg">
+<body background="images/back.jpg">
 
 	<?php session_start(); ?>
 

@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-<body background="back.jpg">
+<body background="images/back.jpg">
 
 
 	<img src="images/top.jpg" width=975 >
@@ -36,8 +36,8 @@
 			</map>
 			<tr>
 			<td width='10%'></td>
-			<td width='35%'><img  border=0 src='default.jpg' usemap='#map397'></td>
-			<td width='55%'><img src='side.jpg' width=400 hight=400></td> </tr>
+			<td width='35%'><img  border=0 src='images/default.jpg' usemap='#map397'></td>
+			<td width='55%'><img src='images/side.jpg' width=400 hight=400></td> </tr>
 		      </td>
 			</table>";
 			}
