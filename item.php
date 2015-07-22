@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php 
+$title = 'Items';
+include 'header.php'; 
+?>
 
 <body background="back.jpg">
 	<?php session_start(); ?>
