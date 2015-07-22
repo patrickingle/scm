@@ -37,3 +37,8 @@ function DoTheScroll(){
     timerRunning = true
     timerID = self.setTimeout("DoTheScroll()", delay)
 }
+
+// jQuery Main ready function
+jQuery(document).ready(function ($){
+
+});
