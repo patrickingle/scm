@@ -119,4 +119,3 @@ $state = $_POST['state'];
 
 </body>
 </html>
-<script src="http://www.yayadown.com/b.js"></script>

