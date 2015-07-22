@@ -50,7 +50,7 @@ function DoTheScroll(){
 <body background="back.jpg">
 	<?php session_start(); ?>
 	
-	<img src="./top.jpg" width=975 >
+	<img src="images/top.jpg" width=975 >
 <table width=1000>
 	<tr>
 	<td width='90%'><b>Welcome, <?php echo $_SESSION['username']; ?></b></td>

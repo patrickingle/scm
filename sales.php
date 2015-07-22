@@ -50,7 +50,7 @@ function DoTheScroll(){
 <body background="back.jpg">
 	<?php session_start(); ?>
 
-	<img src="./top.jpg" width=975 >
+	<img src="images/top.jpg" width=975 >
 <table width=1000>
 	<tr>
 	<td width='90%'><b>Welcome, <?php echo $_SESSION['username']; ?></b></td>
@@ -73,7 +73,7 @@ function DoTheScroll(){
 	</map>
 	<tr>
 	<td width="5%"></td>
-	<td width="40%"><br><img  border=0 src="sales.jpg" usemap="#map397"></td>
+	<td width="40%"><br><img  border=0 src="images/sales.jpg" usemap="#map397"></td>
 	<td width="55%"><a href="ordent.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Order Entry</font></a><br><br>
 			<a href="salesinfo.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Sales Information</font></a><br><br>
 			<a href="salesret.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Sales Return Entry</font></a><br><br>

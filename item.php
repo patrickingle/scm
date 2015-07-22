@@ -1,56 +1,9 @@
-<html>
-<head>
+<?php include 'header.php'; ?>
 
-<title>Item</title>
-</head>
-<SCRIPT language=JavaScript>
-<!--
-// Use the following three variables to set up the message:
-var msg = "This Software is Designed By Lalit Chandnani(Administrator & Frontend Designer), Deepak Agnihotri(Analysis & Connectivity), Rahul Sharma(Database Designer) Student of CSE VIsem,OIST Bpl"
-var delay = 100
-var startPos = 127
-
-// Don't touch these variables:
-var timerID = null
-var timerRunning = false
-var pos = 0
-
-// Crank it up!
-StartScrolling()
-
-function StartScrolling(){
-    // Make sure the clock is stopped
-    StopTheClock()
-
-    // Pad the message with spaces to get the "start" position
-    for (var i = 0; i < startPos; i++) msg = " " + msg
-
-    // Off we go...
-    DoTheScroll()
-}
-
-function StopTheClock(){
-    if(timerRunning)
-        clearTimeout(timerID)
-    timerRunning = false
-}
-
-function DoTheScroll(){
-    if (pos < msg.length)
-        self.status = msg.substring(pos, msg.length);
-    else
-        pos=-1;
-    ++pos
-    timerRunning = true
-    timerID = self.setTimeout("DoTheScroll()", delay)
-}
-//-->
-
-</SCRIPT>
 <body background="back.jpg">
 	<?php session_start(); ?>
 
-	<img src="./top.jpg" width=975 >
+	<img src="images/top.jpg" width=975 >
 <table width=1000>
 	<tr>
 	<td width='90%'><b>Welcome, <?php echo $_SESSION['username']; ?></b></td>
@@ -74,7 +27,7 @@ function DoTheScroll(){
 	</map>
 	<tr>
 	<td width="5%"></td>
-	<td width="40%"><br><img  border=0 src="item.jpg" usemap="#map397"></td>
+	<td width="40%"><br><img  border=0 src="images/item.jpg" usemap="#map397"></td>
 	<td width="55%"><a href="newitem.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Add New Item</font></a><br><br>
 			<a href="iteminfo.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Get Item Information</font></a><br><br>
 			<a href="itemup.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Update Item Entry</font></a><br><br>
@@ -86,3 +39,5 @@ function DoTheScroll(){
 
 
 </body>
+
+<?php include 'footer.php'; ?>
