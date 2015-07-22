@@ -86,7 +86,7 @@ function DoTheScroll(){
 			if(isset($_POST['lalithid1']))
 			{
 				$purid = $_POST['purid'];
-				$link = mysql_connect("localhost", "root", "gate1024");
+				$link = mysql_connect("localhost", "root", "");
 				$result = mysql_db_query('scm', "SELECT * FROM purchase WHERE purchaseid='$purid'",$link);
 				
 				$data = mysql_fetch_row($result);

@@ -48,11 +48,12 @@ function DoTheScroll(){
 
 </SCRIPT>
 <body background="back.jpg">
+	<?php session_start(); ?>
 
 	<img src="./top.jpg" width=975 >
 <table width=1000>
 	<tr>
-	<td width='90%'><b>Welcome, lalit </b></td>
+	<td width='90%'><b>Welcome, <?php echo $_SESSION['username']; ?></b></td>
 	<td width="10%"><a href="end.php" align="right"><font color="#000000"><b>Logout</b></font></a></td>
 	</tr>
 </table>
@@ -82,7 +83,7 @@ function DoTheScroll(){
 	if(isset($_POST['hid_var']))
 	{
 		$supid = $_POST['supid'];
-		$link = mysql_connect("localhost","root","gate1024");
+		$link = mysql_connect("localhost","root","");
 		$result = mysql_db_query("scm","delete from supplier where supplierid = $supid",$link);
 		
 	}  

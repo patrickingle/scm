@@ -85,7 +85,7 @@ function DoTheScroll(){
 			{
 			$retdate = $_POST['retdate'];
 			$purid= $_POST['purid'];
- 			$link = mysql_connect("localhost", "root", "gate1024");
+ 			$link = mysql_connect("localhost", "root", "");
 			$result = mysql_db_query('scm',"update purchase set returningdate='$retdate' where purchaseid='$purid'",$link);
 			} 
 

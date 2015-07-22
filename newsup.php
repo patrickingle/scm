@@ -105,7 +105,7 @@ $fax = $_POST['fax'];
 $emailid = $_POST['emailid'];
 $state = $_POST['state']; 
 
-			$link = mysql_connect("localhost", "root", "gate1024");
+			$link = mysql_connect("localhost", "root", "");
 			$result = mysql_db_query('scm',"INSERT INTO supplier VALUES('$supid','$cname','$address','$city','$postalcode','$contact','$fax','$emailid','$state')",$link);
 			 
 			}		

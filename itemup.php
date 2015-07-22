@@ -92,7 +92,7 @@ function DoTheScroll(){
 			$desc = $_POST['desc'];
 			$date = $_POST['date'];
 			
-			$link = mysql_connect("localhost", "root", "gate1024");
+			$link = mysql_connect("localhost", "root", "");
 			$result = mysql_db_query('scm',"update item set itemname='$itemname', category='$category', purchasingprice='$pur_price', quantity='$quantity', sellingprice='$sel_price', description='$desc', date='$date'where itemid='$itemid'",$link);
 			} 
 

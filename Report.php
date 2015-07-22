@@ -71,7 +71,7 @@ function DoTheScroll(){
 
 		";
 	
-				$link = mysql_connect("localhost", "root", "gate1024");
+				$link = mysql_connect("localhost", "root", "");
 				$result = mysql_db_query('scm', "SELECT * FROM customer",$link);
 				
 				while($data = mysql_fetch_row($result)){
@@ -103,7 +103,7 @@ function DoTheScroll(){
 		echo "ITEM
 
 		";
-				$link = mysql_connect("localhost", "root", "gate1024");
+				$link = mysql_connect("localhost", "root", "");
 				$result = mysql_db_query('scm', "SELECT * FROM item",$link);
 				while($data = mysql_fetch_row($result)){
 				echo "Item ID : $data[0]
@@ -132,7 +132,7 @@ function DoTheScroll(){
 		echo "SALES
 
 		";
-				$link = mysql_connect("localhost", "root", "gate1024");
+				$link = mysql_connect("localhost", "root", "");
 				$result = mysql_db_query('scm', "SELECT * FROM sales",$link);
 				
 				while($data = mysql_fetch_row($result)){
@@ -164,7 +164,7 @@ function DoTheScroll(){
 		echo "SUPPLIER
 
 		";
-				$link = mysql_connect("localhost", "root", "gate1024");
+				$link = mysql_connect("localhost", "root", "");
 				$result = mysql_db_query('scm', "SELECT * FROM supplier",$link);
 				
 				while($data = mysql_fetch_row($result)){
@@ -195,7 +195,7 @@ function DoTheScroll(){
 		echo "PURCHASE
 
 		";
-				$link = mysql_connect("localhost", "root", "gate1024");
+				$link = mysql_connect("localhost", "root", "");
 				$result = mysql_db_query('scm', "SELECT * FROM purchase",$link);
 				
 				while($data = mysql_fetch_row($result)){

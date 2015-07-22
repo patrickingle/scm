@@ -86,7 +86,7 @@ function DoTheScroll(){
 			if(isset($_POST['lalithid1']))
 			{
 				$ordid = $_POST['ordid'];
-				$link = mysql_connect("localhost", "root", "gate1024");
+				$link = mysql_connect("localhost", "root", "");
 				$result = mysql_db_query('scm', "SELECT * FROM sales WHERE orderid='$ordid'",$link);
 				
 				$data = mysql_fetch_row($result);

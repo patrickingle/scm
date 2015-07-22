@@ -86,7 +86,7 @@ function DoTheScroll(){
 			if(isset($_POST['hid_var2']))
 			{ 
 				$itemid = $_POST['itemid'];
-				$link = mysql_connect("localhost", "root", "gate1024");
+				$link = mysql_connect("localhost", "root", "");
 				$result = mysql_db_query('scm', "SELECT * FROM item WHERE itemid='$itemid'",$link);
 
 				$data = mysql_fetch_row($result);

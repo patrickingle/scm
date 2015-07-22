@@ -83,7 +83,7 @@ function DoTheScroll(){
 	if(isset($_POST['hid_var']))
 	{
 		$itemid = $_POST['itemid'];
-		$link = mysql_connect("localhost","root","gate1024");
+		$link = mysql_connect("localhost","root","");
 		$result = mysql_db_query("scm","delete from item where itemid = $itemid",$link);
 		
 	}  

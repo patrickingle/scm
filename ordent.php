@@ -109,7 +109,7 @@ $orderdate = $_POST['odate'];
 $deliverydate = $_POST['ddate'];
 $returndate = $_POST['rdate'];
 
-			$link = mysql_connect("localhost", "root", "gate1024");
+			$link = mysql_connect("localhost", "root", "");
 			$result = mysql_db_query('scm',"INSERT INTO sales VALUES('$orderid','$custid','$itemid','$category','$itemname','$qoi','$quantity','$ppu','$orderdate','$deliverydate','$returndate')",$link);
 			}		
 

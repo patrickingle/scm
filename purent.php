@@ -108,7 +108,7 @@ $purdate = $_POST['pdate'];
  
 $recdate = $_POST['recdate'];
 
-			$link = mysql_connect("localhost", "root", "gate1024");
+			$link = mysql_connect("localhost", "root", "");
 			$result = mysql_db_query('scm',"INSERT INTO purchase VALUES('$purid','$supid','$itemid','$itemname','$category','$quantity','$ppu','$purdate','$recdate',null)",$link);
 			}		
 
