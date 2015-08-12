@@ -1,6 +1,14 @@
 <?php 
 $title = 'Customer Information';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT id,name FROM customer",$link);
+$options = '<select name="custid" id="custid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['id'].'">'.$data['name'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -35,7 +43,7 @@ include 'header.php';
 				<img src="images/custinfo.jpg" width=600 hight=75>
 				<form action="custinfo.php" method="POST">
 				<input type="hidden" name="lalithid1">
-					 Enter Customer ID:<input type="text" name="custid"><br><br>
+					 Customer:<?php echo $options; ?><br/><br/>
 					 <input type="submit" value="Submit">
 				</form>
 <?php
@@ -43,19 +51,19 @@ include 'header.php';
 			{
 				$cid = $_POST['custid'];
 				$link = mysql_connect("localhost", "root", "");
-				$result = mysql_db_query('scm', "SELECT * FROM customer WHERE customerid='$cid'",$link);
+				$result = mysql_db_query('scm', "SELECT * FROM customer WHERE id='$cid'",$link);
 				
-				$data = mysql_fetch_row($result);
+				$data = mysql_fetch_assoc($result);
 				if(!$data){die("No Entry Found");}else{ 
-				echo "INFORMATION ABOUT Customer ID: "."<b>".$cid."</b>";
-				echo "<br><br>Company Name: " . $data[1];
-				echo "<br>Address: " . $data[2];
-				echo "<br>City: " . $data[3];
-				echo "<br>Postal Code: " . $data[4];
-				echo "<br>Contact NO: " . $data[5];
-				echo "<br>email ID: " . $data[6];
-				echo "<br>Fax: " . $data[7];
-				echo "<br>State: " . $data[8];}
+				echo "INFORMATION ABOUT Customer ID: "."<b>".$data['id']."</b>";
+				echo "<br><br>Company Name: " . $data['name'];
+				echo "<br>Address: " . $data['address'];
+				echo "<br>City: " . $data['city'];
+				echo "<br>Postal Code: " . $data['postal'];
+				echo "<br>Contact NO: " . $data['contact'];
+				echo "<br>email ID: " . $data['email'];
+				echo "<br>Fax: " . $data['fax'];
+				echo "<br>State: " . $data['state'];}
 			}
 ?>
 

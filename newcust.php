@@ -36,7 +36,6 @@ include 'header.php';
 
 				<form action="newcust.php" method="POST">
 				<input type="hidden" name="lalitvar">
-					Customer ID:<input type="text" name="custid"><br><br>
 					Company Name:<input type="text" name="compname"><br><br>
 					Address:<br><textarea name="address" rows=5 cols=30 ></textarea>
 					City:<input type="text" name="city"><br><br>
@@ -53,7 +52,6 @@ include 'header.php';
 <?php
 
 	if(isset($_POST['lalitvar'])) {
-		$cid = $_POST['custid'];
 		$cname = $_POST['compname'];
 		$ad = $_POST['address'];
 		$ct = $_POST['city'];
@@ -63,7 +61,7 @@ include 'header.php';
 		$fx = $_POST['fax'];
 		$emel = $_POST['email'];
 			$link = mysql_connect("localhost", "root", "");
-			$result = mysql_db_query('scm',"INSERT INTO customer VALUES('$cid','$cname','$ad','$ct','$postal','$cont','$emel','$fx','$stat')");
+			$result = mysql_db_query('scm',"INSERT INTO customer (name,address,city,postal,contact,email,fax,state) VALUES('$cname','$ad','$ct','$postal','$cont','$emel','$fx','$stat')");
 	}		
 
 

@@ -1,6 +1,14 @@
 <?php 
 $title = 'Customer Delete';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT id,name FROM customer",$link);
+$options = '<select name="custid" id="custid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['id'].'">'.$data['name'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -43,11 +51,11 @@ include 'header.php';
 	{
 		$customerid = $_POST['custid'];
 		$link = mysql_connect("localhost","root","");
-		$result = mysql_db_query("scm","delete from customer where customerid = $customerid",$link);
+		$result = mysql_db_query("scm","delete from customer where id = $customerid",$link);
 		
 	}  
 ?>
-					 Enter Customer ID:<input type="text" name="custid"><br><br>
+					 Enter Customer ID:<?php echo $options; ?><br><br>
 					 <input type="submit" value="Delete Entry">
 				</form></td>
 	</tr>
