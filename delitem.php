@@ -1,6 +1,15 @@
 <?php 
 $title = 'Item Delete';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$sql = "SELECT itemid,itemname FROM item";
+$result = mysql_db_query('scm', $sql,$link);
+$options = '<select name="itemid" id="custid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['itemid'].'">'.$data['itemname'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -44,7 +53,7 @@ include 'header.php';
 		
 	}  
 ?>
-					 Enter Item ID:<input type="text" name="itemid"><br><br>
+					 Item:<?php echo $options; ?><br><br>
 					 <input type="submit" value="Delete Entry">
 				</form></td>
 	</tr>

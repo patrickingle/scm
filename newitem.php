@@ -1,6 +1,7 @@
 <?php 
 $title = 'New Item Entry';
 include 'header.php'; 
+
 ?>
 
 <body background="images/back.jpg">
@@ -35,7 +36,6 @@ include 'header.php';
 				<img src="images/newitem.jpg" width=600 hight=75>
 				<form action="newitem.php" method="POST">
 				<input type="hidden" name="new_hid">
-					Item ID:<input type="text" name="itemid"><br><br>
 					Item Name:<input type="text" name="itemname"><br><br>
 					Category:<br><textarea name="cat" rows=5 cols=30 ></textarea><br><br>
 					Purchasing Price:<input type="text" name="pur_price"><br><br>
@@ -44,14 +44,12 @@ include 'header.php';
 					Description:<br><textarea name="desc" rows=5 cols=30 ></textarea><br><br>
 					Date(In yyyy-dd-mm format):<input type="text" name="date"><br><br>
 					<input type="submit" value="Add">
-					<input type="submit" value="Commit">
 					<input type="reset" value="Reset">
 				</form></td>
 
 <?php
 			if(isset($_POST['new_hid']))
 			{
-			$itmid = $_POST['itemid'];
 			$itmname = $_POST['itemname'];
 			$category = $_POST['cat'];
 			$pur_price = $_POST['pur_price'] ;
@@ -60,7 +58,8 @@ include 'header.php';
 			$desc = $_POST['desc'];
 			$date = $_POST['date'];
 			$link = mysql_connect("localhost", "root", "");
-			$result = mysql_db_query("scm","INSERT INTO item VALUES('$itmid','$itmname','$category','$pur_price','$quantity','$sel_price','$desc','$date')",$link);
+			$sql = "INSERT INTO item (itemname,category,purchasingprice,quantity,sellingprice,description,dateofpurchasing) VALUES('$itmname','$category','$pur_price','$quantity','$sel_price','$desc','$date')";
+			$result = mysql_db_query("scm",$sql,$link);
 			}		
 
 ?>

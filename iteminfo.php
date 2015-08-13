@@ -1,6 +1,14 @@
 <?php 
 $title = 'Item Information';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT itemid,itemname FROM item",$link);
+$options = '<select name="itemid" id="custid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['itemid'].'">'.$data['itemname'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -35,7 +43,7 @@ include 'header.php';
 				<img src="images/iteminfo.jpg" width=600 hight=75>
 				<form method="POST" action="iteminfo.php">
 				<input type="hidden" name="hid_var2">
-					 Enter Item ID:<input type="text" name="itemid"><br><br>
+					 Item:<?php echo $options; ?><br><br>
 					 <input type="submit" value="Submit">
 				</form>
 	<?php

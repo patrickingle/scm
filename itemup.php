@@ -1,6 +1,15 @@
 <?php 
 $title = 'Item Update';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$sql = "SELECT itemid,itemname FROM item";
+$result = mysql_db_query('scm', $sql,$link);
+$options = '<select name="itemid" id="custid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['itemid'].'">'.$data['itemname'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -35,7 +44,8 @@ include 'header.php';
 				<img src="images/itemup.jpg" width=600 hight=75>
 				<form action="itemup.php" method="POST">
 				 
-					Enter Item Id:<input type="text" name="itemid"><br><br> 
+					Item:<?php echo $options; ?><br><br> 
+					<input type='submit' name='getitem' value='Get Item'><br/><br/>
 <?php
 			if(isset($_POST['button']))
 			{
@@ -49,19 +59,25 @@ include 'header.php';
 			$date = $_POST['date'];
 			
 			$link = mysql_connect("localhost", "root", "");
-			$result = mysql_db_query('scm',"update item set itemname='$itemname', category='$category', purchasingprice='$pur_price', quantity='$quantity', sellingprice='$sel_price', description='$desc', date='$date'where itemid='$itemid'",$link);
-			} 
+			$sql = "update item set itemname='$itemname', category='$category', purchasingprice='$pur_price', quantity='$quantity', sellingprice='$sel_price', description='$desc', dateofpurchasing='$date' where itemid=$itemid";
+			echo $sql.'<br>';
+			$result = mysql_db_query('scm',$sql,$link);
+			} elseif (isset($_POST['getitem'])) {
+$sql = "SELECT * FROM item WHERE itemid=".$_POST['itemid'];
+$result = mysql_db_query('scm', $sql,$link);
+$rows = mysql_fetch_assoc($result);
 
 					echo "Enter values to update :<br><br>";
-					echo "Item Name :<input type='text' name='itemname'><br><br>";
-					echo "Category :<br><textarea name='category' rows=5 cols=30 ></textarea><br><br>";
-					echo "Purchasing Price :<input type='text' name='pur_price'><br><br>";
-					echo "Quantity :<input type='text' name='qua'><br><br>";						
-					echo "Selling Price :<input type='text' name='sel_price'><br><br>";
-					echo "Description :<br><textarea name='desc' rows=5 cols=30></textarea><br><br>";
-    					echo "Date(In YYYY-MM-DD Format) :<input type='text' name='date'><br><br>";
+					echo "<input type='hidden' name='itemid' value='".$rows['itemid']."'>";
+					echo "Item Name :<input type='text' name='itemname' value='".$rows['itemname']."'><br><br>";
+					echo "Category :<br><textarea name='category' rows=5 cols=30 >".$rows['category']."</textarea><br><br>";
+					echo "Purchasing Price :<input type='text' name='pur_price' value='".$rows['purchasingprice']."'><br><br>";
+					echo "Quantity :<input type='text' name='qua' value='".$rows['quantity']."'><br><br>";						
+					echo "Selling Price :<input type='text' name='sel_price' value='".$rows['sellingprice']."'><br><br>";
+					echo "Description :<br><textarea name='desc' rows=5 cols=30>".$rows['description']."</textarea><br><br>";
+    					echo "Date(In YYYY-MM-DD Format) :<input type='text' name='date' value='".$rows['dateofpurchasing']."'><br><br>";
 					echo "<input type='submit' name='button' value='Update'>";
-				 
+			}	 
 ?>
 
 				</form></td>
