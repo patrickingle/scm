@@ -5,7 +5,7 @@ include 'header.php';
 
 <body background="images/back.jpg">
 
-	<img src="images/top.jpg" width=975 >
+	<!--img src="images/top.jpg" width=975 -->
 	<br><br><br><br><br><br> 
 
 	<table>
