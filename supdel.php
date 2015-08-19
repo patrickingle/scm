@@ -1,6 +1,14 @@
 <?php 
 $title = 'Delete Supplier';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT supplierid,companyname FROM supplier",$link);
+$options = '<select name="supid" id="supid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['supplierid'].'">'.$data['companyname'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -44,7 +52,7 @@ include 'header.php';
 		
 	}  
 ?>
-					 Enter supplierr ID:<input type="text" name="supid"><br><br>
+					 Supplier:<?php echo $options; ?><br><br>
 					 <input type="submit" value="Delete Entry">
 				</form>
 

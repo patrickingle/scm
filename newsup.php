@@ -36,7 +36,6 @@ include 'header.php';
 		
 				<form action="newsup.php" method="POST">
 				<input type="hidden" name="lalitvar">
-					Supplier ID :<input type="text" name="supid"><br><br>
 					Company Name :<input type="text" name="cname"><br><br>
 					Address :<br><textarea name="address" rows=5 cols=30 ></textarea><br><br>
 					City :<input type="text" name="city"><br><br>
@@ -51,18 +50,19 @@ include 'header.php';
 <?php
 			if(isset($_POST['lalitvar']))
 			{
-$supid = $_POST['supid'];
-$cname = $_POST['cname'];
-$address = $_POST['address'];
-$city = $_POST['city'];
-$postalcode = $_POST['pc'];
-$contact = $_POST['cn'];
-$fax = $_POST['fax'];
-$emailid = $_POST['emailid'];
-$state = $_POST['state']; 
+				$cname = mysql_escape_string($_POST['cname']);
+				$address = mysql_escape_string($_POST['address']);
+				$city = mysql_escape_string($_POST['city']);
+				$postalcode = mysql_escape_string($_POST['pc']);
+				$contact = mysql_escape_string($_POST['cn']);
+				$fax = mysql_escape_string($_POST['fax']);
+				$emailid = mysql_escape_string($_POST['emailid']);
+				$state = mysql_escape_string($_POST['state']); 
 
-			$link = mysql_connect("localhost", "root", "");
-			$result = mysql_db_query('scm',"INSERT INTO supplier VALUES('$supid','$cname','$address','$city','$postalcode','$contact','$fax','$emailid','$state')",$link);
+				$link = mysql_connect("localhost", "root", "");
+				$sql = "INSERT INTO supplier (companyname,address,city,postalcode,contactno,fax,emailid,state) VALUES('$cname','$address','$city','$postalcode','$contact','$fax','$emailid','$state')";
+				echo $sql.'<br>';
+				$result = mysql_db_query('scm',$sql,$link);
 			 
 			}		
 ?>

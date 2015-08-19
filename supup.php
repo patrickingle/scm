@@ -1,6 +1,14 @@
 <?php 
 $title = 'Supplier Update';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT supplierid,companyname FROM supplier",$link);
+$options = '<select name="supid" id="supid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['supplierid'].'">'.$data['companyname'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -34,12 +42,12 @@ include 'header.php';
 	<td width="60%"><br><br>    
 				<img src="images/supup.jpg" width=600 hight=75>
 				<form action="supup.php" method="POST">
-					Enter Supplier ID:<input type="text" name="supid"><br><br><br>
-					
+					Supplier:<?php echo $options; ?><br><br><br>
+					<input type='submit' name='getsupplier' value='Get Supplier'><br/><br/>
 <?php
 			if(isset($_POST['button']))
 			{
-			$supid = $_POST['supid'];
+			$supid = $_POST['supplierid'];
 			$cname = $_POST['compname'];
 			$ad = $_POST['address'];
 			$ct = $_POST['city'];
@@ -50,19 +58,23 @@ include 'header.php';
 			$emel = $_POST['email'];
 			$link = mysql_connect("localhost", "root", "");
 			$result = mysql_db_query('scm',"update supplier set companyname='$cname', address='$ad', city='$ct', state='$stat', postalcode='$postal', contactno='$cont', fax='$fx', emailid='$emel' where supplierid='$supid'",$link);
-			} 
+			} elseif (isset($_POST['getsupplier'])) {
+$sql = "SELECT * FROM supplier WHERE supplierid=".$_POST['supid'];
+$result = mysql_db_query('scm', $sql,$link);
+$rows = mysql_fetch_assoc($result);
 
 					echo "Enter values to update:<br><br>";
-					echo "Company Name:<input type='text' name='compname'><br><br>";
-					echo "Address:<br><textarea name='address' rows=5 cols=30 ></textarea><br><br>";
-					echo "City:<input type='text' name='city'><br><br>";
-					echo "State:<input type='text' name='state'><br><br>";						
-					echo "Postal Code:<input type='text' name='postal'><br><br>";
-					echo "Contact No:<input type='text' name='contact'><br><br>";
-					echo "Fax:<input type='text' name='fax'><br><br>";
-					echo "email ID:<input type='text' name='email'><br><br><br><br>";
+					echo "<input type='hidden' name='supplierid' value='".$rows['supplierid']."'>";
+					echo "Company Name:<input type='text' name='compname' value='".$rows['companyname']."'><br><br>";
+					echo "Address:<br><textarea name='address' rows=5 cols=30 >".$rows['address']."</textarea><br><br>";
+					echo "City:<input type='text' name='city' value='".$rows['city']."'><br><br>";
+					echo "State:<input type='text' name='state' value='".$rows['state']."'><br><br>";						
+					echo "Postal Code:<input type='text' name='postal' value='".$rows['postalcode']."'><br><br>";
+					echo "Contact No:<input type='text' name='contact' value='".$rows['contactno']."'><br><br>";
+					echo "Fax:<input type='text' name='fax' value='".$rows['fax']."'><br><br>";
+					echo "email ID:<input type='text' name='email' value='".$rows['emailid']."'><br><br><br><br>";
 					echo "<input type='submit' name='button' value='Update'>";
-				 
+			}				 
 ?>
  
 
