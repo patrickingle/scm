@@ -1,6 +1,14 @@
 <?php 
 $title = 'Sales Informatio';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT orderid FROM sales",$link);
+$options = '<select name="ordid" id="ordid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['orderid'].'">'.$data['orderid'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -35,7 +43,7 @@ include 'header.php';
 				<img src="images/salesinfo.jpg" width=600 hight=75>
 				<form action="salesinfo.php" method="POST">
 				<input type="hidden" name="lalithid1">
-					 Enter Order ID:<input type="text" name="ordid"><br><br>
+					 Order ID:<?php echo $options; ?><br><br>
 					 <input type="submit" value="Submit">
 				</form>
 <?php

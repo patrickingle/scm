@@ -1,66 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="C:\xampp\htdocs\scm\scm.clpprj">
 	<settings><PM_URL><![CDATA[http://localhost/scm/scm/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/scm/scm/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
-		<file name="C:\xampp\htdocs\scm-server\server.php"/>
-		<file name="C:\xampp\htdocs\scm\customer.php"/>
-		<file name="C:\xampp\htdocs\scm\newcust.php"/>
-		<file name="C:\xampp\htdocs\scm\custinfo.php"/>
-		<file name="C:\xampp\htdocs\scm\custup.php"/>
-		<file name="C:\xampp\htdocs\scm\custdel.php"/>
-		<file name="C:\xampp\htdocs\scm\newitem.php"/>
+		<file name="C:\xampp\htdocs\scm\salesinfo.php"/>
 		<file name="C:\xampp\htdocs\scm\iteminfo.php"/>
-		<file name="C:\xampp\htdocs\scm\itemup.php"/>
+		<file name="C:\xampp\htdocs\scm\ordent.php"/>
+		<file name="C:\xampp\htdocs\scm\js\scm.js"/>
+		<file name="C:\xampp\htdocs\scm-server\server.php"/>
 	</lastopfiles>
 	<errors version="5.3">
-		<errfile name="C:\xampp\htdocs\scm\newitem.php">
-			<error val="34;13;48;13;2002;1;"/>
-			<error val="43;35;52;35;2002;1;"/>
-		</errfile>
-		<errfile name="C:\xampp\htdocs\scm\newcust.php">
+		<errfile name="C:\xampp\htdocs\scm\salesinfo.php">
 			<error val="34;12;48;12;2002;1;"/>
-			<error val="43;34;52;34;2002;1;"/>
+			<error val="45;34;54;34;2002;1;"/>
 		</errfile>
-		<errfile name="C:\xampp\htdocs\scm\itemup.php">
-			<error val="34;20;48;20;2002;1;"/>
-			<error val="42;42;51;42;2002;1;"/>
+		<errfile name="C:\xampp\htdocs\scm\ordent.php">
+			<error val="34;29;48;29;2002;1;"/>
+			<error val="42;51;51;51;2002;1;"/>
+		</errfile>
+		<errfile name="C:\xampp\htdocs\scm\login.php">
+			<error val="24;19;48;19;2002;1;"/>
+			<error val="72;19;82;19;2002;1;"/>
+			<error val="48;19;54;19;2002;1;"/>
+			<error val="5;11;15;11;2002;1;"/>
 		</errfile>
 		<errfile name="C:\xampp\htdocs\scm\iteminfo.php">
 			<error val="34;20;48;20;2002;1;"/>
 			<error val="44;42;53;42;2002;1;"/>
-		</errfile>
-		<errfile name="C:\xampp\htdocs\scm\custup.php">
-			<error val="34;20;48;20;2002;1;"/>
-			<error val="42;42;51;42;2002;1;"/>
-		</errfile>
-		<errfile name="C:\xampp\htdocs\scm\customer.php">
-			<error val="34;13;48;13;2002;1;"/>
-		</errfile>
-		<errfile name="C:\xampp\htdocs\scm\custinfo.php">
-			<error val="34;20;48;20;2002;1;"/>
-			<error val="44;42;53;42;2002;1;"/>
-		</errfile>
-		<errfile name="C:\xampp\htdocs\scm\custdel.php">
-			<error val="34;20;48;20;2002;1;"/>
-			<error val="43;45;52;45;2002;1;"/>
 		</errfile>
 	</errors>
 	<codestructure version="5.0">
 		<phptree>
 			<treenode node="footer.php;PHP:PHP Include;C:\xampp\htdocs\scm\item.php;f15;45;25;45;;C:\xampp\htdocs\scm\index.php;f15;55;25;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="header.php;PHP:PHP Include;C:\xampp\htdocs\scm\supup.php;f9;2;19;2;;C:\xampp\htdocs\scm\supplier.php;f9;2;19;2;;C:\xampp\htdocs\scm\supinfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\supdel.php;f9;2;19;2;;C:\xampp\htdocs\scm\salesret.php;f9;2;19;2;;C:\xampp\htdocs\scm\salesinfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\sales.php;f9;2;19;2;;C:\xampp\htdocs\scm\report.php;f9;2;19;2;;C:\xampp\htdocs\scm\purret.php;f9;2;19;2;;C:\xampp\htdocs\scm\purinfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\purent.php;f9;2;19;2;;C:\xampp\htdocs\scm\purchase.php;f9;2;19;2;;C:\xampp\htdocs\scm\ordent.php;f9;2;19;2;;C:\xampp\htdocs\scm\newsup.php;f9;2;19;2;;C:\xampp\htdocs\scm\login.php;f9;2;19;2;;C:\xampp\htdocs\scm\item.php;f9;2;19;2;;C:\xampp\htdocs\scm\index.php;f15;0;25;0;;C:\xampp\htdocs\scm\end.php;f9;2;19;2;;C:\xampp\htdocs\scm\delitem.php;f9;2;19;2;;C:\xampp\htdocs\scm\customer.php;f9;2;19;2;;C:\xampp\htdocs\scm\newcust.php;f9;2;19;2;;C:\xampp\htdocs\scm\custup.php;f9;2;19;2;;C:\xampp\htdocs\scm\custinfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\custdel.php;f9;2;19;2;;C:\xampp\htdocs\scm\newitem.php;f9;2;19;2;;C:\xampp\htdocs\scm\iteminfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\itemup.php;f9;2;19;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="header.php;PHP:PHP Include;C:\xampp\htdocs\scm\supup.php;f9;2;19;2;;C:\xampp\htdocs\scm\supplier.php;f9;2;19;2;;C:\xampp\htdocs\scm\supinfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\supdel.php;f9;2;19;2;;C:\xampp\htdocs\scm\salesret.php;f9;2;19;2;;C:\xampp\htdocs\scm\sales.php;f9;2;19;2;;C:\xampp\htdocs\scm\report.php;f9;2;19;2;;C:\xampp\htdocs\scm\purret.php;f9;2;19;2;;C:\xampp\htdocs\scm\purinfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\purent.php;f9;2;19;2;;C:\xampp\htdocs\scm\purchase.php;f9;2;19;2;;C:\xampp\htdocs\scm\newsup.php;f9;2;19;2;;C:\xampp\htdocs\scm\newitem.php;f9;2;19;2;;C:\xampp\htdocs\scm\newcust.php;f9;2;19;2;;C:\xampp\htdocs\scm\itemup.php;f9;2;19;2;;C:\xampp\htdocs\scm\item.php;f9;2;19;2;;C:\xampp\htdocs\scm\end.php;f9;2;19;2;;C:\xampp\htdocs\scm\delitem.php;f9;2;19;2;;C:\xampp\htdocs\scm\custup.php;f9;2;19;2;;C:\xampp\htdocs\scm\customer.php;f9;2;19;2;;C:\xampp\htdocs\scm\custinfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\custdel.php;f9;2;19;2;;C:\xampp\htdocs\scm\index.php;f15;0;25;0;;C:\xampp\htdocs\scm\login.php;f9;2;19;2;;C:\xampp\htdocs\scm\iteminfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\salesinfo.php;f9;2;19;2;;C:\xampp\htdocs\scm\ordent.php;f9;2;19;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="login.php;PHP:PHP Include;C:\xampp\htdocs\scm\index.php;f11;52;20;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="_POST;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f12;39;18;39;;C:\xampp\htdocs\scm\supinfo.php;f12;41;18;41;;C:\xampp\htdocs\scm\supdel.php;f10;38;16;38;;C:\xampp\htdocs\scm\salesinfo.php;f12;41;18;41;;C:\xampp\htdocs\scm\purret.php;f12;39;18;39;;C:\xampp\htdocs\scm\purinfo.php;f12;41;18;41;;C:\xampp\htdocs\scm\purent.php;f12;53;18;53;;C:\xampp\htdocs\scm\ordent.php;f12;53;18;53;;C:\xampp\htdocs\scm\newsup.php;f12;51;18;51;;C:\xampp\htdocs\scm\index.php;f11;9;17;9;;C:\xampp\htdocs\scm\delitem.php;f10;38;16;38;;C:\xampp\htdocs\scm\newcust.php;f10;53;16;53;;C:\xampp\htdocs\scm\custup.php;f12;48;18;48;;C:\xampp\htdocs\scm\custinfo.php;f12;49;18;49;;C:\xampp\htdocs\scm\custdel.php;f10;49;16;49;;C:\xampp\htdocs\scm\newitem.php;f12;50;18;50;;C:\xampp\htdocs\scm\iteminfo.php;f12;49;18;49;;C:\xampp\htdocs\scm\itemup.php;f12;48;18;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="_POST;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f12;39;18;39;;C:\xampp\htdocs\scm\supinfo.php;f12;41;18;41;;C:\xampp\htdocs\scm\supdel.php;f10;38;16;38;;C:\xampp\htdocs\scm\purret.php;f12;39;18;39;;C:\xampp\htdocs\scm\purinfo.php;f12;41;18;41;;C:\xampp\htdocs\scm\purent.php;f12;53;18;53;;C:\xampp\htdocs\scm\newsup.php;f12;51;18;51;;C:\xampp\htdocs\scm\newitem.php;f12;50;18;50;;C:\xampp\htdocs\scm\newcust.php;f10;53;16;53;;C:\xampp\htdocs\scm\itemup.php;f12;49;18;49;;C:\xampp\htdocs\scm\delitem.php;f10;47;16;47;;C:\xampp\htdocs\scm\custup.php;f12;48;18;48;;C:\xampp\htdocs\scm\custinfo.php;f12;49;18;49;;C:\xampp\htdocs\scm\custdel.php;f10;49;16;49;;C:\xampp\htdocs\scm\index.php;f11;9;17;9;;C:\xampp\htdocs\scm\iteminfo.php;f12;49;18;49;;C:\xampp\htdocs\scm\salesinfo.php;f12;41;18;41;;C:\xampp\htdocs\scm\ordent.php;f12;69;18;69;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="_SESSION;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f40;11;49;11;;C:\xampp\htdocs\scm\supplier.php;f40;11;49;11;;C:\xampp\htdocs\scm\supinfo.php;f40;11;49;11;;C:\xampp\htdocs\scm\supdel.php;f40;11;49;11;;C:\xampp\htdocs\scm\salesret.php;f40;11;49;11;;C:\xampp\htdocs\scm\salesinfo.php;f40;11;49;11;;C:\xampp\htdocs\scm\sales.php;f40;11;49;11;;C:\xampp\htdocs\scm\report.php;f40;11;49;11;;C:\xampp\htdocs\scm\purret.php;f40;11;49;11;;C:\xampp\htdocs\scm\purinfo.php;f40;11;49;11;;C:\xampp\htdocs\scm\purent.php;f40;11;49;11;;C:\xampp\htdocs\scm\purchase.php;f40;11;49;11;;C:\xampp\htdocs\scm\ordent.php;f40;11;49;11;;C:\xampp\htdocs\scm\newsup.php;f40;11;49;11;;C:\xampp\htdocs\scm\item.php;f40;11;49;11;;C:\xampp\htdocs\scm\index.php;f2;13;11;13;;C:\xampp\htdocs\scm\delitem.php;f40;11;49;11;;C:\xampp\htdocs\scm\customer.php;f40;12;49;12;;C:\xampp\htdocs\scm\newcust.php;f40;11;49;11;;C:\xampp\htdocs\scm\custup.php;f40;19;49;19;;C:\xampp\htdocs\scm\custinfo.php;f40;19;49;19;;C:\xampp\htdocs\scm\custdel.php;f41;19;50;19;;C:\xampp\htdocs\scm\newitem.php;f40;12;49;12;;C:\xampp\htdocs\scm\iteminfo.php;f40;19;49;19;;C:\xampp\htdocs\scm\itemup.php;f40;19;49;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="_SESSION;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f40;11;49;11;;C:\xampp\htdocs\scm\supplier.php;f40;11;49;11;;C:\xampp\htdocs\scm\supinfo.php;f40;11;49;11;;C:\xampp\htdocs\scm\supdel.php;f40;11;49;11;;C:\xampp\htdocs\scm\salesret.php;f40;11;49;11;;C:\xampp\htdocs\scm\sales.php;f40;11;49;11;;C:\xampp\htdocs\scm\report.php;f40;11;49;11;;C:\xampp\htdocs\scm\purret.php;f40;11;49;11;;C:\xampp\htdocs\scm\purinfo.php;f40;11;49;11;;C:\xampp\htdocs\scm\purent.php;f40;11;49;11;;C:\xampp\htdocs\scm\purchase.php;f40;11;49;11;;C:\xampp\htdocs\scm\newsup.php;f40;11;49;11;;C:\xampp\htdocs\scm\newitem.php;f40;12;49;12;;C:\xampp\htdocs\scm\newcust.php;f40;11;49;11;;C:\xampp\htdocs\scm\itemup.php;f40;20;49;20;;C:\xampp\htdocs\scm\item.php;f40;11;49;11;;C:\xampp\htdocs\scm\delitem.php;f40;20;49;20;;C:\xampp\htdocs\scm\custup.php;f40;19;49;19;;C:\xampp\htdocs\scm\customer.php;f40;12;49;12;;C:\xampp\htdocs\scm\custinfo.php;f40;19;49;19;;C:\xampp\htdocs\scm\custdel.php;f41;19;50;19;;C:\xampp\htdocs\scm\index.php;f2;13;11;13;;C:\xampp\htdocs\scm\iteminfo.php;f40;19;49;19;;C:\xampp\htdocs\scm\salesinfo.php;f40;11;49;11;;C:\xampp\htdocs\scm\ordent.php;f40;28;49;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="ad;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;43;6;43;;C:\xampp\htdocs\scm\newcust.php;f2;55;5;55;;C:\xampp\htdocs\scm\custup.php;f4;51;7;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="address;PHP:Var Name;C:\xampp\htdocs\scm\newsup.php;f0;55;8;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="category;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;58;9;58;;C:\xampp\htdocs\scm\ordent.php;f0;58;9;58;;C:\xampp\htdocs\scm\newitem.php;f3;53;12;53;;C:\xampp\htdocs\scm\itemup.php;f3;52;12;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="category;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;58;9;58;;C:\xampp\htdocs\scm\newitem.php;f3;53;12;53;;C:\xampp\htdocs\scm\itemup.php;f3;53;12;53;;C:\xampp\htdocs\scm\ordent.php;f0;74;9;74;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="check;PHP:Var Name;C:\xampp\htdocs\scm\index.php;f4;18;10;18;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -76,17 +59,19 @@
 			</treenode>
 			<treenode node="ct;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;44;6;44;;C:\xampp\htdocs\scm\newcust.php;f2;56;5;56;;C:\xampp\htdocs\scm\custup.php;f4;52;7;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="custid;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;56;7;56;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="cust_options;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;6;13;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="custid;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;72;7;72;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="customerid;PHP:Var Name;C:\xampp\htdocs\scm\custdel.php;f2;51;13;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="data;PHP:Var Name;C:\xampp\htdocs\scm\supinfo.php;f4;47;9;47;;C:\xampp\htdocs\scm\salesinfo.php;f4;47;9;47;;C:\xampp\htdocs\scm\report.php;f10;32;15;32;;C:\xampp\htdocs\scm\purinfo.php;f4;47;9;47;;C:\xampp\htdocs\scm\custup.php;f7;7;12;7;;C:\xampp\htdocs\scm\custinfo.php;f7;7;12;7;;C:\xampp\htdocs\scm\custdel.php;f7;7;12;7;;C:\xampp\htdocs\scm\iteminfo.php;f7;7;12;7;;C:\xampp\htdocs\scm\itemup.php;f7;7;12;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="data;PHP:Var Name;C:\xampp\htdocs\scm\supinfo.php;f4;47;9;47;;C:\xampp\htdocs\scm\report.php;f10;32;15;32;;C:\xampp\htdocs\scm\purinfo.php;f4;47;9;47;;C:\xampp\htdocs\scm\itemup.php;f7;8;12;8;;C:\xampp\htdocs\scm\delitem.php;f7;8;12;8;;C:\xampp\htdocs\scm\custup.php;f7;7;12;7;;C:\xampp\htdocs\scm\custinfo.php;f7;7;12;7;;C:\xampp\htdocs\scm\custdel.php;f7;7;12;7;;C:\xampp\htdocs\scm\iteminfo.php;f7;7;12;7;;C:\xampp\htdocs\scm\salesinfo.php;f4;47;9;47;;C:\xampp\htdocs\scm\ordent.php;f7;7;12;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="date;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;58;8;58;;C:\xampp\htdocs\scm\itemup.php;f3;57;8;57;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="date;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;58;8;58;;C:\xampp\htdocs\scm\itemup.php;f3;58;8;58;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="deliverydate;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;64;13;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="deliverydate;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;80;13;80;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="desc;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;57;8;57;;C:\xampp\htdocs\scm\itemup.php;f3;56;8;56;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="desc;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;57;8;57;;C:\xampp\htdocs\scm\itemup.php;f3;57;8;57;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="emailid;PHP:Var Name;C:\xampp\htdocs\scm\newsup.php;f0;60;8;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -96,21 +81,23 @@
 			</treenode>
 			<treenode node="fx;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;48;6;48;;C:\xampp\htdocs\scm\newcust.php;f2;60;5;60;;C:\xampp\htdocs\scm\custup.php;f4;56;7;56;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="itemid;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;57;7;57;;C:\xampp\htdocs\scm\ordent.php;f0;57;7;57;;C:\xampp\htdocs\scm\delitem.php;f2;40;9;40;;C:\xampp\htdocs\scm\iteminfo.php;f4;51;11;51;;C:\xampp\htdocs\scm\itemup.php;f3;50;10;50;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="item_options;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;14;13;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="itemname;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;59;9;59;;C:\xampp\htdocs\scm\ordent.php;f0;59;9;59;;C:\xampp\htdocs\scm\itemup.php;f3;51;12;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="itemid;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;57;7;57;;C:\xampp\htdocs\scm\itemup.php;f3;51;10;51;;C:\xampp\htdocs\scm\delitem.php;f2;49;9;49;;C:\xampp\htdocs\scm\iteminfo.php;f4;51;11;51;;C:\xampp\htdocs\scm\ordent.php;f0;73;7;73;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="itemname;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;59;9;59;;C:\xampp\htdocs\scm\itemup.php;f3;52;12;52;;C:\xampp\htdocs\scm\ordent.php;f0;75;9;75;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="itmname;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;52;11;52;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="link;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;50;8;50;;C:\xampp\htdocs\scm\supinfo.php;f4;44;9;44;;C:\xampp\htdocs\scm\supdel.php;f2;41;7;41;;C:\xampp\htdocs\scm\salesinfo.php;f4;44;9;44;;C:\xampp\htdocs\scm\report.php;f4;29;9;29;;C:\xampp\htdocs\scm\purret.php;f4;43;9;43;;C:\xampp\htdocs\scm\purinfo.php;f4;44;9;44;;C:\xampp\htdocs\scm\purent.php;f3;66;8;66;;C:\xampp\htdocs\scm\ordent.php;f3;67;8;67;;C:\xampp\htdocs\scm\newsup.php;f3;63;8;63;;C:\xampp\htdocs\scm\index.php;f2;14;7;14;;C:\xampp\htdocs\scm\delitem.php;f2;41;7;41;;C:\xampp\htdocs\scm\newcust.php;f3;62;8;62;;C:\xampp\htdocs\scm\custup.php;f0;4;5;4;;C:\xampp\htdocs\scm\custinfo.php;f0;4;5;4;;C:\xampp\htdocs\scm\custdel.php;f0;4;5;4;;C:\xampp\htdocs\scm\newitem.php;f3;59;8;59;;C:\xampp\htdocs\scm\iteminfo.php;f0;4;5;4;;C:\xampp\htdocs\scm\itemup.php;f0;4;5;4;;;;vposresource;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="link;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;50;8;50;;C:\xampp\htdocs\scm\supinfo.php;f4;44;9;44;;C:\xampp\htdocs\scm\supdel.php;f2;41;7;41;;C:\xampp\htdocs\scm\report.php;f4;29;9;29;;C:\xampp\htdocs\scm\purret.php;f4;43;9;43;;C:\xampp\htdocs\scm\purinfo.php;f4;44;9;44;;C:\xampp\htdocs\scm\purent.php;f3;66;8;66;;C:\xampp\htdocs\scm\newsup.php;f3;63;8;63;;C:\xampp\htdocs\scm\newitem.php;f3;59;8;59;;C:\xampp\htdocs\scm\newcust.php;f3;62;8;62;;C:\xampp\htdocs\scm\itemup.php;f0;4;5;4;;C:\xampp\htdocs\scm\delitem.php;f0;4;5;4;;C:\xampp\htdocs\scm\custup.php;f0;4;5;4;;C:\xampp\htdocs\scm\custinfo.php;f0;4;5;4;;C:\xampp\htdocs\scm\custdel.php;f0;4;5;4;;C:\xampp\htdocs\scm\index.php;f2;14;7;14;;C:\xampp\htdocs\scm\iteminfo.php;f0;4;5;4;;C:\xampp\htdocs\scm\salesinfo.php;f4;44;9;44;;C:\xampp\htdocs\scm\ordent.php;f0;4;5;4;;;;vposresource;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="login;PHP:Var Name;C:\xampp\htdocs\scm\index.php;f9;16;15;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="login;PHP:Var Name;C:\xampp\htdocs\scm\index.php;f9;16;15;16;;;;vposarray;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="options;PHP:Var Name;C:\xampp\htdocs\scm\custup.php;f0;6;8;6;;C:\xampp\htdocs\scm\custinfo.php;f0;6;8;6;;C:\xampp\htdocs\scm\custdel.php;f0;6;8;6;;C:\xampp\htdocs\scm\iteminfo.php;f0;6;8;6;;C:\xampp\htdocs\scm\itemup.php;f0;6;8;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="options;PHP:Var Name;C:\xampp\htdocs\scm\itemup.php;f0;7;8;7;;C:\xampp\htdocs\scm\delitem.php;f0;7;8;7;;C:\xampp\htdocs\scm\custup.php;f0;6;8;6;;C:\xampp\htdocs\scm\custinfo.php;f0;6;8;6;;C:\xampp\htdocs\scm\custdel.php;f0;6;8;6;;C:\xampp\htdocs\scm\iteminfo.php;f0;6;8;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="orderdate;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;63;10;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="orderdate;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;79;10;79;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="orderid;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;55;8;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="orderid;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;71;8;71;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="ordid;PHP:Var Name;C:\xampp\htdocs\scm\salesinfo.php;f4;43;10;43;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -120,29 +107,31 @@
 			</treenode>
 			<treenode node="postalcode;PHP:Var Name;C:\xampp\htdocs\scm\newsup.php;f0;57;11;57;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="ppu;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;61;4;61;;C:\xampp\htdocs\scm\ordent.php;f0;62;4;62;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="ppu;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;61;4;61;;C:\xampp\htdocs\scm\ordent.php;f0;78;4;78;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="pur_price;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;54;13;54;;C:\xampp\htdocs\scm\itemup.php;f3;53;13;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="pur_price;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;54;13;54;;C:\xampp\htdocs\scm\itemup.php;f3;54;13;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="purdate;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;62;8;62;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="purid;PHP:Var Name;C:\xampp\htdocs\scm\purret.php;f3;42;9;42;;C:\xampp\htdocs\scm\purinfo.php;f4;43;10;43;;C:\xampp\htdocs\scm\purent.php;f0;55;6;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="qoi;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;60;4;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="qoi;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;76;4;76;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="quantity;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;60;9;60;;C:\xampp\htdocs\scm\ordent.php;f0;61;9;61;;C:\xampp\htdocs\scm\newitem.php;f3;55;12;55;;C:\xampp\htdocs\scm\itemup.php;f3;54;12;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="quantity;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;60;9;60;;C:\xampp\htdocs\scm\newitem.php;f3;55;12;55;;C:\xampp\htdocs\scm\itemup.php;f3;55;12;55;;C:\xampp\htdocs\scm\ordent.php;f0;77;9;77;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="recdate;PHP:Var Name;C:\xampp\htdocs\scm\purent.php;f0;64;8;64;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="result;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;51;10;51;;C:\xampp\htdocs\scm\supinfo.php;f4;45;11;45;;C:\xampp\htdocs\scm\supdel.php;f2;42;9;42;;C:\xampp\htdocs\scm\salesinfo.php;f4;45;11;45;;C:\xampp\htdocs\scm\report.php;f4;30;11;30;;C:\xampp\htdocs\scm\purret.php;f3;44;10;44;;C:\xampp\htdocs\scm\purinfo.php;f4;45;11;45;;C:\xampp\htdocs\scm\purent.php;f3;67;10;67;;C:\xampp\htdocs\scm\ordent.php;f3;68;10;68;;C:\xampp\htdocs\scm\newsup.php;f3;64;10;64;;C:\xampp\htdocs\scm\index.php;f2;15;9;15;;C:\xampp\htdocs\scm\delitem.php;f2;42;9;42;;C:\xampp\htdocs\scm\newcust.php;f3;63;10;63;;C:\xampp\htdocs\scm\custup.php;f0;5;7;5;;C:\xampp\htdocs\scm\custinfo.php;f0;5;7;5;;C:\xampp\htdocs\scm\custdel.php;f0;5;7;5;;C:\xampp\htdocs\scm\newitem.php;f3;61;10;61;;C:\xampp\htdocs\scm\iteminfo.php;f0;5;7;5;;C:\xampp\htdocs\scm\itemup.php;f0;5;7;5;;;;vposresource;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="result;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;51;10;51;;C:\xampp\htdocs\scm\supinfo.php;f4;45;11;45;;C:\xampp\htdocs\scm\supdel.php;f2;42;9;42;;C:\xampp\htdocs\scm\report.php;f4;30;11;30;;C:\xampp\htdocs\scm\purret.php;f3;44;10;44;;C:\xampp\htdocs\scm\purinfo.php;f4;45;11;45;;C:\xampp\htdocs\scm\purent.php;f3;67;10;67;;C:\xampp\htdocs\scm\newsup.php;f3;64;10;64;;C:\xampp\htdocs\scm\newitem.php;f3;61;10;61;;C:\xampp\htdocs\scm\newcust.php;f3;63;10;63;;C:\xampp\htdocs\scm\itemup.php;f0;6;7;6;;C:\xampp\htdocs\scm\delitem.php;f0;6;7;6;;C:\xampp\htdocs\scm\custup.php;f0;5;7;5;;C:\xampp\htdocs\scm\custinfo.php;f0;5;7;5;;C:\xampp\htdocs\scm\custdel.php;f0;5;7;5;;C:\xampp\htdocs\scm\index.php;f2;15;9;15;;C:\xampp\htdocs\scm\iteminfo.php;f0;5;7;5;;C:\xampp\htdocs\scm\salesinfo.php;f4;45;11;45;;C:\xampp\htdocs\scm\ordent.php;f0;5;7;5;;;;vposresource;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="retdate;PHP:Var Name;C:\xampp\htdocs\scm\purret.php;f3;41;11;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="returndate;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;65;11;65;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="returndate;PHP:Var Name;C:\xampp\htdocs\scm\ordent.php;f0;81;11;81;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="sel_price;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;56;13;56;;C:\xampp\htdocs\scm\itemup.php;f3;55;13;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="rows;PHP:Var Name;C:\xampp\htdocs\scm\itemup.php;f0;67;5;67;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;60;7;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="sel_price;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;56;13;56;;C:\xampp\htdocs\scm\itemup.php;f3;56;13;56;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="sql;PHP:Var Name;C:\xampp\htdocs\scm\newitem.php;f3;60;7;60;;C:\xampp\htdocs\scm\itemup.php;f0;5;4;5;;C:\xampp\htdocs\scm\delitem.php;f0;5;4;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="stat;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;45;8;45;;C:\xampp\htdocs\scm\newcust.php;f2;57;7;57;;C:\xampp\htdocs\scm\custup.php;f4;53;9;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -150,7 +139,7 @@
 			</treenode>
 			<treenode node="supid;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f3;41;9;41;;C:\xampp\htdocs\scm\supinfo.php;f4;43;10;43;;C:\xampp\htdocs\scm\supdel.php;f2;40;8;40;;C:\xampp\htdocs\scm\purent.php;f0;56;6;56;;C:\xampp\htdocs\scm\newsup.php;f0;53;6;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="title;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f0;1;6;1;;C:\xampp\htdocs\scm\supplier.php;f0;1;6;1;;C:\xampp\htdocs\scm\supinfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\supdel.php;f0;1;6;1;;C:\xampp\htdocs\scm\salesret.php;f0;1;6;1;;C:\xampp\htdocs\scm\salesinfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\sales.php;f0;1;6;1;;C:\xampp\htdocs\scm\report.php;f0;1;6;1;;C:\xampp\htdocs\scm\purret.php;f0;1;6;1;;C:\xampp\htdocs\scm\purinfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\purent.php;f0;1;6;1;;C:\xampp\htdocs\scm\purchase.php;f0;1;6;1;;C:\xampp\htdocs\scm\ordent.php;f0;1;6;1;;C:\xampp\htdocs\scm\newsup.php;f0;1;6;1;;C:\xampp\htdocs\scm\login.php;f0;1;6;1;;C:\xampp\htdocs\scm\item.php;f0;1;6;1;;C:\xampp\htdocs\scm\header.php;f10;3;16;3;;C:\xampp\htdocs\scm\end.php;f0;1;6;1;;C:\xampp\htdocs\scm\delitem.php;f0;1;6;1;;C:\xampp\htdocs\scm\customer.php;f0;1;6;1;;C:\xampp\htdocs\scm\newcust.php;f0;1;6;1;;C:\xampp\htdocs\scm\custup.php;f0;1;6;1;;C:\xampp\htdocs\scm\custinfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\custdel.php;f0;1;6;1;;C:\xampp\htdocs\scm\newitem.php;f0;1;6;1;;C:\xampp\htdocs\scm\iteminfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\itemup.php;f0;1;6;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="title;PHP:Var Name;C:\xampp\htdocs\scm\supup.php;f0;1;6;1;;C:\xampp\htdocs\scm\supplier.php;f0;1;6;1;;C:\xampp\htdocs\scm\supinfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\supdel.php;f0;1;6;1;;C:\xampp\htdocs\scm\salesret.php;f0;1;6;1;;C:\xampp\htdocs\scm\sales.php;f0;1;6;1;;C:\xampp\htdocs\scm\report.php;f0;1;6;1;;C:\xampp\htdocs\scm\purret.php;f0;1;6;1;;C:\xampp\htdocs\scm\purinfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\purent.php;f0;1;6;1;;C:\xampp\htdocs\scm\purchase.php;f0;1;6;1;;C:\xampp\htdocs\scm\newsup.php;f0;1;6;1;;C:\xampp\htdocs\scm\newitem.php;f0;1;6;1;;C:\xampp\htdocs\scm\newcust.php;f0;1;6;1;;C:\xampp\htdocs\scm\itemup.php;f0;1;6;1;;C:\xampp\htdocs\scm\item.php;f0;1;6;1;;C:\xampp\htdocs\scm\end.php;f0;1;6;1;;C:\xampp\htdocs\scm\delitem.php;f0;1;6;1;;C:\xampp\htdocs\scm\custup.php;f0;1;6;1;;C:\xampp\htdocs\scm\customer.php;f0;1;6;1;;C:\xampp\htdocs\scm\custinfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\custdel.php;f0;1;6;1;;C:\xampp\htdocs\scm\header.php;f10;3;16;3;;C:\xampp\htdocs\scm\login.php;f0;1;6;1;;C:\xampp\htdocs\scm\iteminfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\salesinfo.php;f0;1;6;1;;C:\xampp\htdocs\scm\ordent.php;f0;1;6;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="username;PHP:Var Name;C:\xampp\htdocs\scm\index.php;f2;11;11;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -214,7 +203,7 @@
 	<todoblock>
 	</todoblock>
 	<filescache>
-		<file name="C:\xampp\htdocs\scm\js\scm.js" crc="595275407"/>
+		<file name="C:\xampp\htdocs\scm\js\scm.js" crc="787726203"/>
 		<file name="C:\xampp\htdocs\scm\supup.php" crc="622837482"/>
 		<file name="C:\xampp\htdocs\scm\supplier.php" crc="-2093763589"/>
 		<file name="C:\xampp\htdocs\scm\supinfo.php" crc="178496966"/>
@@ -227,19 +216,19 @@
 		<file name="C:\xampp\htdocs\scm\purinfo.php" crc="1873517364"/>
 		<file name="C:\xampp\htdocs\scm\purent.php" crc="-899948849"/>
 		<file name="C:\xampp\htdocs\scm\purchase.php" crc="1895378720"/>
-		<file name="C:\xampp\htdocs\scm\ordent.php" crc="-1384346237"/>
+		<file name="C:\xampp\htdocs\scm\ordent.php" crc="-283832074"/>
 		<file name="C:\xampp\htdocs\scm\newsup.php" crc="1715001779"/>
 		<file name="C:\xampp\htdocs\scm\newitem.php" crc="1442186691"/>
 		<file name="C:\xampp\htdocs\scm\newcust.php" crc="20589683"/>
-		<file name="C:\xampp\htdocs\scm\login.php" crc="-705035065"/>
-		<file name="C:\xampp\htdocs\scm\itemup.php" crc="1596676198"/>
+		<file name="C:\xampp\htdocs\scm\login.php" crc="1439572799"/>
+		<file name="C:\xampp\htdocs\scm\itemup.php" crc="-1150010057"/>
 		<file name="C:\xampp\htdocs\scm\iteminfo.php" crc="1466583133"/>
 		<file name="C:\xampp\htdocs\scm\item.php" crc="-1994296299"/>
 		<file name="C:\xampp\htdocs\scm\index.php" crc="-1447548268"/>
 		<file name="C:\xampp\htdocs\scm\header.php" crc="-148025098"/>
 		<file name="C:\xampp\htdocs\scm\footer.php" crc="1663681931"/>
 		<file name="C:\xampp\htdocs\scm\end.php" crc="871718278"/>
-		<file name="C:\xampp\htdocs\scm\delitem.php" crc="-1326092923"/>
+		<file name="C:\xampp\htdocs\scm\delitem.php" crc="736695518"/>
 		<file name="C:\xampp\htdocs\scm\custup.php" crc="-1503658630"/>
 		<file name="C:\xampp\htdocs\scm\customer.php" crc="1064990136"/>
 		<file name="C:\xampp\htdocs\scm\custinfo.php" crc="-1666023003"/>

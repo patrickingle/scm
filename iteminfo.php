@@ -4,7 +4,7 @@ include 'header.php';
 
 $link = mysql_connect("localhost", "root", "");
 $result = mysql_db_query('scm', "SELECT itemid,itemname FROM item",$link);
-$options = '<select name="itemid" id="custid"><option value="0">Select</option>';
+$options = '<select name="itemid" id="itemid"><option value="0">Select</option>';
 while ($data = mysql_fetch_assoc($result)) {
 	$options .= '<option value="'.$data['itemid'].'">'.$data['itemname'].'</option>';
 }

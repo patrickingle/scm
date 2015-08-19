@@ -1,6 +1,23 @@
 <?php 
 $title = 'Order Entry';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT id,name FROM customer",$link);
+$cust_options = '<select name="custid" id="custid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$cust_options .= '<option value="'.$data['id'].'">'.$data['name'].'</option>';
+}
+$cust_options .= '</select>';
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT itemid,itemname FROM item",$link);
+$item_options = '<select name="itemid" id="itemid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$item_options .= '<option value="'.$data['itemid'].'">'.$data['itemname'].'</option>';
+}
+$item_options .= '</select>';
+
 ?>
 
 <body background="images/back.jpg">
@@ -36,37 +53,38 @@ include 'header.php';
 				
  				<form action="ordent.php" method="POST">
 				<input type="hidden" name="lalitvar">
-					Order ID :<input type="text" name="orderid"><br><br>
-					Customer ID :<input type="text" name="custid"><br><br>
-					Item ID :<input type="text" name="itemid"><br><br>
+					Customer :<?php echo $cust_options; ?><br><br>
+					Item :<?php echo $item_options; ?><br><br>
 					Category :<br><textarea name="category" rows=5 cols=30 ></textarea><br><br>
-					Item Name :<input type="text" name="itemname"><br><br>
-					Quantity of Item :<input type="text" name="qoi"><br><br>
-					Quantity :<input type="text" name="qua"><br><br>
-					Price/unit :<input type="text" name="ppu"><br><br>						
-					Order Date :<input type="text" name="odate"><br><br>
-					Delivery Date :<input type="text" name="ddate"><br><br>
-					Returing Date :<input type="text" name="rdate"><br><br>
+					Item Name :<input type="text" name="itemname" id="itemname"><br><br>
+					Quantity of Item :<input type="text" name="qoi" id="qoi"><br><br>
+					Quantity :<input type="text" name="qua" id="qua"><br><br>
+					Price/unit :<input type="text" name="ppu" id="ppu"><br><br>						
+					Order Date :<input type="text" name="odate" id="odate"><br><br>
+					Delivery Date :<input type="text" name="ddate" id="ddate"><br><br>
+					Returing Date :<input type="text" name="rdate" id="rdate"><br><br>
 					<input type="submit" name ="add" value="add">
 					<input type="reset" name="reset" value="Reset">
 				</form>
 <?php
 			if(isset($_POST['lalitvar']))
 			{
-$orderid = $_POST['orderid'];
-$custid = $_POST['custid'];
-$itemid = $_POST['itemid'];
-$category = $_POST['category'];
-$itemname = $_POST['itemname'];
-$qoi = $_POST['qoi'];
-$quantity = $_POST['qua'];
-$ppu = $_POST['ppu'];
-$orderdate = $_POST['odate'];
-$deliverydate = $_POST['ddate'];
-$returndate = $_POST['rdate'];
+				//$orderid = $_POST['orderid'];
+				$custid = $_POST['custid'];
+				$itemid = $_POST['itemid'];
+				$category = $_POST['category'];
+				$itemname = $_POST['itemname'];
+				$qoi = $_POST['qoi'];
+				$quantity = $_POST['qua'];
+				$ppu = $_POST['ppu'];
+				$orderdate = $_POST['odate'];
+				$deliverydate = $_POST['ddate'];
+				$returndate = $_POST['rdate'];
 
-			$link = mysql_connect("localhost", "root", "");
-			$result = mysql_db_query('scm',"INSERT INTO sales VALUES('$orderid','$custid','$itemid','$category','$itemname','$qoi','$quantity','$ppu','$orderdate','$deliverydate','$returndate')",$link);
+				$link = mysql_connect("localhost", "root", "");
+				$sql = "INSERT INTO sales (customerid, itemid, category, itemname, quantityofitem, quantity, priceperunit, orderdate, deliverydate, returningdate) VALUES('$custid','$itemid','$category','$itemname','$qoi','$quantity','$ppu','$orderdate','$deliverydate','$returndate')";
+				
+				$result = mysql_db_query('scm',$sql,$link);
 			}		
 
 

@@ -1,6 +1,14 @@
 <?php 
 $title = 'Sales Return';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT orderid FROM sales",$link);
+$options = '<select name="ordid" id="ordid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['orderid'].'">'.$data['orderid'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -34,7 +42,19 @@ include 'header.php';
 	<td width="60%">
 				<img src="images/salesret.jpg" width=600 hight=75>
 				
- 
+				<form action="salesret.php" method="POST">
+				<input type="hidden" name="lalithid1">
+					 Order ID:<?php echo $options; ?><br><br>
+					 <input type="submit" value="Submit">
+				</form>
+
+				<div style="display:none;" id="noreturn">
+					<h2>Not returnable, return date has passed.</h2>
+				</div> 
+				
+				<div style="display:none;" id="returnable">
+					<h2>Returnable permitted</h2>
+				</div>
 
 	</td>
 	</tr>
