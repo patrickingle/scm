@@ -1,6 +1,22 @@
 <?php 
 $title = 'Purchase Entry';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT supplierid,companyname FROM supplier",$link);
+$sup_options = '<select name="supid" id="supid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$sup_options .= '<option value="'.$data['supplierid'].'">'.$data['companyname'].'</option>';
+}
+$sup_options .= '</select>';
+
+$result = mysql_db_query('scm', "SELECT itemid,itemname FROM item",$link);
+$item_options = '<select name="itemid" id="itemid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$item_options .= '<option value="'.$data['itemid'].'">'.$data['itemname'].'</option>';
+}
+$item_options .= '</select>';
+
 ?>
 
 <body background="images/back.jpg">
@@ -36,16 +52,15 @@ include 'header.php';
 				
  				<form action="purent.php" method="POST">
 				<input type="hidden" name="lalitvar">
-					Purchase ID :<input type="text" name="purid"><br><br>
-					Supplier ID :<input type="text" name="supid"><br><br>
-					Item ID :<input type="text" name="itemid"><br><br>
-					Item Name :<input type="text" name="itemname"><br><br>
-					Category :<br><textarea name="category" rows=5 cols=30 ></textarea><br><br>
-					Quantity :<input type="text" name="qua"><br><br>
-					Price/unit :<input type="text" name="ppu"><br><br>						
-					Purchasing Date :<input type="text" name="pdate"><br><br>
+					Supplier:<?php echo $sup_options; ?><br><br>
+					Item:<?php echo $item_options; ?><br><br>
+					Item Name :<input type="text" name="itemname" id="itemname"><br><br>
+					Category :<br><textarea name="category" rows=5 cols=30 id="category" ></textarea><br><br>
+					Quantity :<input type="text" name="qua" id="qua"><br><br>
+					Price/unit :<input type="text" name="ppu" id="ppu"><br><br>						
+					Purchasing Date :<input type="text" name="pdate" id="odate"><br><br>
 					 
-					Recieving Date :<input type="text" name="recdate"><br><br>
+					Recieving Date :<input type="text" name="recdate" id="recdate"><br><br>
 					<input type="submit" name ="add" value="add">
 					<input type="reset" name="reset" value="Reset">
 				</form>
@@ -53,7 +68,6 @@ include 'header.php';
 
 			if(isset($_POST['lalitvar']))
 			{
-$purid = $_POST['purid'];
 $supid = $_POST['supid'];
 $itemid = $_POST['itemid'];
 $category = $_POST['category'];
