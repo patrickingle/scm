@@ -79,7 +79,8 @@ $purdate = $_POST['pdate'];
 $recdate = $_POST['recdate'];
 
 			$link = mysql_connect("localhost", "root", "");
-			$result = mysql_db_query('scm',"INSERT INTO purchase VALUES('$purid','$supid','$itemid','$itemname','$category','$quantity','$ppu','$purdate','$recdate',null)",$link);
+			$sql = "INSERT INTO purchase (supplierid,itemid,itemname,category,quantity,purchaseperunit,purchasingdate,receivingdate) VALUES('$supid','$itemid','$itemname','$category','$quantity','$ppu','$purdate','$recdate')";
+			$result = mysql_db_query('scm',$sql,$link);
 			}		
 
 

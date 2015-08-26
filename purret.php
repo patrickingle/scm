@@ -1,6 +1,14 @@
 <?php 
 $title = 'Purchase Return Entry';
 include 'header.php'; 
+
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT purchaseid,itemname FROM purchase",$link);
+$options = '<select name="purid" id="purid"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['purchaseid'].'">'.$data['itemname'].'</option>';
+}
+$options .= '</select>';
 ?>
 
 <body background="images/back.jpg">
@@ -35,7 +43,7 @@ include 'header.php';
 				<img src="images/puretent.jpg" width=600 hight=75>
 				<form action="purret.php" method="POST">
 				 
-					Enter Purchase Id:<input type="text" name="purid"><br><br> 
+					Purchase Item:<?php echo $options; ?><br><br> 
 <?php
 			if(isset($_POST['button']))
 			{
