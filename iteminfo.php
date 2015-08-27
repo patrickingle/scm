@@ -38,7 +38,7 @@ $options .= '</select>';
 
 	<tr>
 	<td width="5%"></td>
-	<td width="35%"><br><br><br><br><br><br><br><img  border=0 src="images/item.jpg" usemap="#map397"></td>
+	<td width="35%"><br><br><br><br><br><br><br><!--img  border=0 src="images/item.jpg" usemap="#map397"--><?php include 'sidebar.php'; ?></td>
 	<td width="60%">
 				<img src="images/iteminfo.jpg" width=600 hight=75>
 				<form method="POST" action="iteminfo.php">

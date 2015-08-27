@@ -29,7 +29,10 @@ include 'header.php';
 	</map>
 	<tr>
 	<td width="5%"></td>
-	<td width="40%"><br><img  border=0 src="images/purchase.jpg" usemap="#map397"></td>
+	<td width="40%">
+	<br><!--img  border=0 src="images/purchase.jpg" usemap="#map397"-->
+		<?php include 'sidebar.php'; ?>		
+	</td>
 	<td width="55%"><a href="purent.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=>Purchase Order Entry</font></a><br><br>
 			<a href="purinfo.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=>Purchase Information</font></a><br><br>
 			<a href="purret.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=>Purchase Return Entry</font></a><br><br>

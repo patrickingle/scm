@@ -3,10 +3,10 @@ $title = 'Sales Informatio';
 include 'header.php'; 
 
 $link = mysql_connect("localhost", "root", "");
-$result = mysql_db_query('scm', "SELECT orderid FROM sales",$link);
+$result = mysql_db_query('scm', "SELECT orderid,itemname FROM sales",$link);
 $options = '<select name="ordid" id="ordid"><option value="0">Select</option>';
 while ($data = mysql_fetch_assoc($result)) {
-	$options .= '<option value="'.$data['orderid'].'">'.$data['orderid'].'</option>';
+	$options .= '<option value="'.$data['orderid'].'">'.$data['itemname'].'</option>';
 }
 $options .= '</select>';
 ?>
@@ -38,7 +38,7 @@ $options .= '</select>';
 
 	<tr>
 	<td width="5%"></td>
-	<td width="35%"><br><br><br><br><br><br><br><img  border=0 src="images/sales.jpg" usemap="#map397"></td>
+	<td width="35%"><br><br><br><br><br><br><br><!--img  border=0 src="images/sales.jpg" usemap="#map397"--><?php include 'sidebar.php'; ?></td>
 	<td width="60%">
 				<img src="images/salesinfo.jpg" width=600 hight=75>
 				<form action="salesinfo.php" method="POST">

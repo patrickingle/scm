@@ -31,7 +31,7 @@ include 'header.php';
 
 	<tr>
 	<td width="5%"></td>
-	<td width="35%"> <img  border=0 src="images/item.jpg" usemap="#map397"></td>
+	<td width="35%"> <!--img  border=0 src="images/item.jpg" usemap="#map397"--><?php include 'sidebar.php'; ?></td>
 	<td width="60%"><br><br><br><br>     
 				<img src="images/newitem.jpg" width=600 hight=75>
 				<form action="newitem.php" method="POST">

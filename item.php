@@ -30,7 +30,10 @@ include 'header.php';
 	</map>
 	<tr>
 	<td width="5%"></td>
-	<td width="40%"><br><img  border=0 src="images/item.jpg" usemap="#map397"></td>
+	<td width="40%"><br>
+	<!--img  border=0 src="images/item.jpg" usemap="#map397"-->
+		<?php include 'sidebar.php'; ?>
+	</td>
 	<td width="55%"><a href="newitem.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Add New Item</font></a><br><br>
 			<a href="iteminfo.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Get Item Information</font></a><br><br>
 			<a href="itemup.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Update Item Entry</font></a><br><br>

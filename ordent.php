@@ -47,7 +47,7 @@ $item_options .= '</select>';
 
 	<tr>
 	<td width="5%"></td>
-	<td width="35%">   <img  border=0 src="images/sales.jpg" usemap="#map397"></td>
+	<td width="35%">   <!--img  border=0 src="images/sales.jpg" usemap="#map397"--><?php include 'sidebar.php'; ?></td>
 	<td width="60%"><br><br> <br><br> 
 				<img src="images/ordent.jpg" width=600 hight=75>
 				

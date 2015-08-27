@@ -29,7 +29,10 @@ include 'header.php';
 	</map>
 	<tr>
 	<td width="5%"></td>
-	<td width="40%"><br><img  border=0 src="images/sup.jpg" usemap="#map397"></td>
+	<td width="40%">
+	<br><!--img  border=0 src="images/sup.jpg" usemap="#map397"-->
+		<?php include 'sidebar.php'; ?>		
+	</td>
 	<td width="55%"><a href="newsup.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> New Supplier Entry</font></a><br><br>
 			<a href="supinfo.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Supplier Information</font></a><br><br>
 			<a href="supup.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Supplier Update</font></a><br><br>

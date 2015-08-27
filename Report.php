@@ -18,8 +18,12 @@ include 'header.php';
 
 <table>
 	<tr>
-		<td width="20%"></td>
-		<td width="80%"><font size=5><b>Report</b></font><br><br>
+	<td width="5%"></td>
+	<td width="40%">
+	<br><!--img  border=0 src="images/purchase.jpg" usemap="#map397"-->
+		<?php include 'sidebar.php'; ?>		
+	</td>
+		<td width="55%"><font size=5><b>Report</b></font><br><br>
 		<textarea name="report" rows="20" cols="80" value="Ur report will b displayed Here !!">
 		
 		<?php	

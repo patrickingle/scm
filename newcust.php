@@ -30,7 +30,9 @@ include 'header.php';
 
 	<tr>
 	<td width="5%"></td> <br> <br><br>
-	<td width="35%"> <img  border=0 src="images/cust1.jpg" usemap="#map397"></td>
+	<td width="35%"> <!--img  border=0 src="images/cust1.jpg" usemap="#map397"-->
+				<?php include 'sidebar.php'; ?>
+	</td>
 	<td width="60%">  <br><br><br><br><br><br>    
 				<img src="images/newcust.jpg" width=600 hight=75>
 

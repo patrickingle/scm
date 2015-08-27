@@ -30,7 +30,10 @@ include 'header.php';
 	</map>
 	<tr>
 	<td width="5%"></td><br> 
-	<td width="40%"><img  border=0 src="images/cust1.jpg" usemap="#map397"></td>
+	<td width="40%">
+	<!--img  border=0 src="images/cust1.jpg" usemap="#map397"-->
+		<?php include 'sidebar.php'; ?>
+	</td>
 	<td width="55%"><a href="newcust.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Add New Customer</font></a><br><br>
 			<a href="custinfo.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Get Customer Information</font></a><br><br>
 			<a href="custup.php"><font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Update Customer Entry</font></a><br><br>
