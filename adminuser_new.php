@@ -56,6 +56,7 @@ if(isset($_POST['lalitvar'])) {
 			</select><br><br>
 			<input type="submit" name ="add" value="Add">
 			<input type="reset" name="reset" value="Reset">
+			<input type="button" onclick="history.back()" value="Back">
 		</form>
 	</td>
 	</tr>

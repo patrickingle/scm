@@ -2,6 +2,13 @@
 $title = 'Admin - Delete Existing User';
 include 'header.php'; 
 
+$link = mysql_connect("localhost", "root", "");
+$result = mysql_db_query('scm', "SELECT username FROM login",$link);
+$options = '<select name="username" id="username"><option value="0">Select</option>';
+while ($data = mysql_fetch_assoc($result)) {
+	$options .= '<option value="'.$data['username'].'">'.$data['username'].'</option>';
+}
+$options .= '</select>';
 ?>
 <body background="images/back.jpg">
 
@@ -28,6 +35,12 @@ include 'header.php';
 			<!--img src="images/plane.jpg" width=600 hight=75-->
 			<h2 class="header-label">Delete Existing User</h2>
 		</div>
+		<form action="adminuser_del.php" method="POST">
+		<input type="hidden" name="lalithid1">
+			User:<?php echo $options; ?><br/><br/>
+			<input type="submit" value="Submit">
+			<input type="button" onclick="history.back()" value="Back">
+		</form>
 	</td>
 	</tr>
 </table>
