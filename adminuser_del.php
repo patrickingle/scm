@@ -1,6 +1,7 @@
-<?php 
-$title = 'Admin - User';
+<?php
+$title = 'Admin - Delete Existing User';
 include 'header.php'; 
+
 ?>
 <body background="images/back.jpg">
 
@@ -23,18 +24,10 @@ include 'header.php';
 		<?php include 'sidebar.php'; ?>
 	</td>
 	<td width="55%">
-		<a href="adminuser_new.php">
-			<font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Add New User
-			</font>
-		</a><br><br>
-		<a href="adminuser_edit.php">
-			<font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Modify Existing User
-			</font>
-		</a><br><br>
-		<a href="adminuser_del.php">
-			<font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Delete Existing User
-			</font>
-		</a><br><br>
+		<div class="header-image">
+			<!--img src="images/plane.jpg" width=600 hight=75-->
+			<h2 class="header-label">Delete Existing User</h2>
+		</div>
 	</td>
 	</tr>
 </table>

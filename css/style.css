@@ -28,3 +28,14 @@
 	margin: 0;
 	padding: 0;
 }
+
+.header-image {
+	background-image: url(../images/plane.jpg);
+	background-size: 600px 80px;
+    background-repeat: no-repeat;
+}
+
+.header-label {
+	color: #fff;
+	text-align: center;
+}
