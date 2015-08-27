@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 22, 2015 at 05:26 AM
+-- Generation Time: Aug 27, 2015 at 02:19 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.5.19
 
@@ -79,6 +79,7 @@ CREATE TABLE IF NOT EXISTS `purchase` (
   `itemname` varchar(80) NOT NULL,
   `category` int(11) NOT NULL,
   `quantity` int(11) NOT NULL,
+  `purchaseperunit` double NOT NULL,
   `purchasingdate` date NOT NULL,
   `receivingdate` date NOT NULL,
   `returningdate` date NOT NULL
@@ -98,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `sales` (
   `itemname` varchar(80) NOT NULL,
   `quantityofitem` int(11) NOT NULL,
   `quantity` int(11) NOT NULL,
-  `priceperunit` decimal(10,0) NOT NULL,
+  `priceperunit` double NOT NULL,
   `orderdate` date NOT NULL,
   `deliverydate` date NOT NULL,
   `returningdate` date NOT NULL
