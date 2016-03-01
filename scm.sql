@@ -36,14 +36,8 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `contact` varchar(80) NOT NULL,
   `email` varchar(10) NOT NULL,
   `fax` varchar(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `customer`
---
-
-INSERT INTO `customer` (`id`, `name`, `address`, `city`, `state`, `postal`, `contact`, `email`, `fax`) VALUES
-(2, 'Costco', 'Anywhere', 'New York', 'NY', 10021, '2125551212', 'sales@cost', 'NA');
 
 -- --------------------------------------------------------
 
@@ -60,14 +54,8 @@ CREATE TABLE IF NOT EXISTS `item` (
   `sellingprice` decimal(10,2) NOT NULL,
   `description` longtext NOT NULL,
   `dateofpurchasing` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `item`
---
-
-INSERT INTO `item` (`itemid`, `itemname`, `category`, `purchasingprice`, `quantity`, `sellingprice`, `description`, `dateofpurchasing`) VALUES
-(2, 'Eggs', 0, '2.71', 30, '0.68', 'Eggs', '2015-08-11');
 
 -- --------------------------------------------------------
 
@@ -85,9 +73,7 @@ CREATE TABLE IF NOT EXISTS `login` (
 -- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`username`, `password`, `access`) VALUES
-('pingle', 'heather', 0),
-('admin', 'password', 9);
+INSERT INTO `login` (`username`, `password`, `access`) VALUES ('admin', 'password', 9);
 
 -- --------------------------------------------------------
 
@@ -106,14 +92,7 @@ CREATE TABLE IF NOT EXISTS `purchase` (
   `purchasingdate` date NOT NULL,
   `receivingdate` date NOT NULL,
   `returningdate` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `purchase`
---
-
-INSERT INTO `purchase` (`purchaseid`, `supplierid`, `itemid`, `itemname`, `category`, `quantity`, `purchaseperunit`, `purchasingdate`, `receivingdate`, `returningdate`) VALUES
-(1, 2, 2, 'Eggs', 1, 23, 0.68, '2015-08-26', '2015-09-01', '2015-08-31');
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -133,14 +112,8 @@ CREATE TABLE IF NOT EXISTS `sales` (
   `orderdate` date NOT NULL,
   `deliverydate` date NOT NULL,
   `returningdate` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `sales`
---
-
-INSERT INTO `sales` (`orderid`, `customerid`, `itemid`, `category`, `itemname`, `quantityofitem`, `quantity`, `priceperunit`, `orderdate`, `deliverydate`, `returningdate`) VALUES
-(1, 2, 2, 0, 'Eggs', 30, 25, 0.68, '2015-08-19', '2015-08-29', '2015-08-19');
 
 -- --------------------------------------------------------
 
@@ -158,14 +131,8 @@ CREATE TABLE IF NOT EXISTS `supplier` (
   `emailid` varchar(80) NOT NULL,
   `fax` varchar(10) NOT NULL,
   `state` varchar(80) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `supplier`
---
-
-INSERT INTO `supplier` (`supplierid`, `companyname`, `address`, `city`, `postalcode`, `contactno`, `emailid`, `fax`, `state`) VALUES
-(2, 'Sams Club', 'Kingston, NY', 'Kingston', 12345, '8455551212', 'kingston@samsclub.com', '8455551212', 'NY');
 
 --
 -- Indexes for dumped tables
@@ -209,27 +176,29 @@ ALTER TABLE `supplier`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-MODIFY `itemid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `itemid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `purchase`
 --
 ALTER TABLE `purchase`
-MODIFY `purchaseid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `purchaseid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `sales`
 --
 ALTER TABLE `sales`
-MODIFY `orderid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `orderid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `supplier`
 --
 ALTER TABLE `supplier`
-MODIFY `supplierid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `supplierid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+ALTER TABLE `customer` CHANGE `email` `email` VARCHAR(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;

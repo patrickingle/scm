@@ -36,6 +36,9 @@ include 'header.php';
 		<a href="adminsquare.php">
 			<font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Square API Integration</font>
 		</a><br><br>
+		<a href="adminstripe.php">
+			<font color="#8B4513" face="Comic Sans MS, arial, Century Gothic" size=6>=> Stripe API Integration</font>
+		</a><br><br>
 	</td>
 	</tr>
 </table>
